@@ -64,7 +64,7 @@ const webpackBootstrapFunc = function () {// webpackBootstrap
   /******/ 	/* webpack/runtime/global */
   /******/ 	(() => {
   /******/ 		__webpack_require__.g = (function () {
-  /******/ 		if (Object.prototype.toString.call(globalThis) === '[object Object]') return globalThis
+  /******/ 		if (Object.prototype.toString.call(self) === '[object Object]') return self
   /******/ 			try {
   /******/ 				return this || new Function('return this')()
         /******/
